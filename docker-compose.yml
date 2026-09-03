@@ -7,3 +7,17 @@ services:
     environment:
       RABBITMQ_DEFAULT_USER: orderapp
       RABBITMQ_DEFAULT_PASS: devpassword
+
+  postgres:
+    image: postgres:16
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: orderapp
+      POSTGRES_PASSWORD: devpassword
+      POSTGRES_DB: orders
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
