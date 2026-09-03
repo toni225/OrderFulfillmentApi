@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/OrderApi/OrderApi.csproj" />
+  <Project Path="src/OrderFulfillment.Shared/OrderFulfillment.Shared.csproj" />
+  <Project Path="src/OrderWorker/OrderWorker.csproj" />
+</Solution>
